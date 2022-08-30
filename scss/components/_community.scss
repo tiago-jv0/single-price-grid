@@ -1,0 +1,66 @@
+.community {
+    grid-area: community;
+
+    padding-block: 2.8rem 3.2rem;
+    padding-inline: 2.4rem;
+
+    background-color: white;
+    border-start-start-radius: 5px;
+    border-start-end-radius: 5px;
+
+    @media screen and (min-width: 768px) {
+        padding: 4rem
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 2rem;
+        line-height: 2.3rem;
+        letter-spacing: -0.25px;
+        color: var(--cyan);
+
+        @media screen and (min-width: 768px) {
+            font-size: 2.4rem;
+            line-height: 2.8rem;
+            letter-spacing: -0.3px;
+        }
+    }
+
+    &__subtitle {
+        margin-block-start: 2.4rem;
+
+        font-weight: 700;
+        font-size: 1.5rem;
+        line-height: 2rem;
+
+        color: var(--bright-yellow);
+        letter-spacing: -0.1875px;
+
+        @media screen and (min-width: 768px) {
+            font-size: 1.8rem;
+            line-height: 2.1rem;
+            letter-spacing: -0.225px;
+        }
+    }
+
+    &__description {
+        margin-block-start: 1.6rem;
+
+        font-weight: 400;
+        font-size: 1.4rem;
+        line-height: 2.6rem;
+
+        letter-spacing: -0.175px;
+
+        color: var(--grayish-blue);
+
+        @media screen and (min-width: 768px) {
+            margin-block-start: 1.1rem;
+
+            font-size: 1.6rem;
+            line-height: 2.6rem;
+            letter-spacing: -0.2px;
+        }
+    }
+
+}

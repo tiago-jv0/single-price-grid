@@ -1,0 +1,223 @@
+:root {
+  --cyan: hsl(179, 62%, 43%);
+  --bright-yellow: hsl(71, 73%, 54%);
+  --light-gray: hsl(204, 43%, 93%);
+  --grayish-blue: hsl(218, 22%, 67%);
+  --primary-font: "Karla", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: var(--primary-font);
+  font-style: normal;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--grayish-blue);
+  padding-inline: 3.2rem;
+  padding-block-start: 7.2rem;
+  padding-block-end: 6.2rem;
+}
+@media screen and (min-width: 768px) {
+  body {
+    padding-block-start: 16.3rem;
+  }
+}
+
+button {
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+}
+
+img,
+source {
+  display: block;
+  max-width: 100%;
+}
+
+.community {
+  grid-area: community;
+  padding-block: 2.8rem 3.2rem;
+  padding-inline: 2.4rem;
+  background-color: white;
+  border-start-start-radius: 5px;
+  border-start-end-radius: 5px;
+}
+@media screen and (min-width: 768px) {
+  .community {
+    padding: 4rem;
+  }
+}
+.community__title {
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 2.3rem;
+  letter-spacing: -0.25px;
+  color: var(--cyan);
+}
+@media screen and (min-width: 768px) {
+  .community__title {
+    font-size: 2.4rem;
+    line-height: 2.8rem;
+    letter-spacing: -0.3px;
+  }
+}
+.community__subtitle {
+  margin-block-start: 2.4rem;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  color: var(--bright-yellow);
+  letter-spacing: -0.1875px;
+}
+@media screen and (min-width: 768px) {
+  .community__subtitle {
+    font-size: 1.8rem;
+    line-height: 2.1rem;
+    letter-spacing: -0.225px;
+  }
+}
+.community__description {
+  margin-block-start: 1.6rem;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 2.6rem;
+  letter-spacing: -0.175px;
+  color: var(--grayish-blue);
+}
+@media screen and (min-width: 768px) {
+  .community__description {
+    margin-block-start: 1.1rem;
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+    letter-spacing: -0.2px;
+  }
+}
+
+.subscription {
+  grid-area: subscription;
+  padding: 2.4rem;
+  background-color: #2AB3B1;
+}
+@media screen and (min-width: 768px) {
+  .subscription {
+    padding: 4rem;
+  }
+}
+.subscription__title {
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 2.1rem;
+  letter-spacing: -0.225px;
+  color: white;
+}
+.subscription__price {
+  margin-block-start: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1.1rem;
+}
+.subscription__price strong {
+  font-weight: 700;
+  font-size: 3.2rem;
+  line-height: 3.7rem;
+  letter-spacing: -0.4px;
+  color: white;
+}
+.subscription__price sup {
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  letter-spacing: -0.2px;
+  color: white;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}
+.subscription__description {
+  margin-block-start: 4px;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  letter-spacing: -0.2px;
+  color: white;
+}
+.subscription__button {
+  margin-block-start: 2.6rem;
+  block-size: 4.8rem;
+  inline-size: 100%;
+  background: var(--bright-yellow);
+  box-shadow: 0px 1rem 1rem rgba(0, 0, 0, 0.0973011);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  letter-spacing: -0.2px;
+  color: white;
+}
+
+.why-us {
+  grid-area: why-us;
+  padding-inline: 2.4rem 4.9rem;
+  padding-block: 2.4rem;
+  background-color: #2AB3B1;
+  mix-blend-mode: normal;
+}
+@media screen and (min-width: 768px) {
+  .why-us {
+    padding: 4rem;
+  }
+}
+.why-us__title {
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 2.1rem;
+  letter-spacing: -0.225px;
+  color: white;
+}
+.why-us__reasons {
+  margin-block-start: 1.8rem;
+  display: flex;
+  flex-direction: column;
+}
+.why-us__reason {
+  font-size: 1.4rem;
+  line-height: 2rem;
+  letter-spacing: -0.175px;
+  color: white;
+  mix-blend-mode: normal;
+  opacity: 0.75;
+}
+
+.section {
+  display: grid;
+  max-inline-size: 31.1rem;
+  margin-inline: auto;
+  grid-template-columns: 1fr;
+  grid-template-areas: "community" "subscription" "why-us";
+  background-color: white;
+  box-shadow: 0px 15px 30px rgba(0, 81, 171, 0.148847);
+  border-radius: 5px;
+}
+@media screen and (min-width: 768px) {
+  .section {
+    max-inline-size: 63.5rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "community community" "subscription why-us";
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

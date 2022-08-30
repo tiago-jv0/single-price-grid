@@ -1,0 +1,19 @@
+.section {
+    display: grid;
+    max-inline-size: 31.1rem;
+    margin-inline: auto;
+
+    grid-template-columns: 1fr;
+    grid-template-areas: "community" "subscription" "why-us";
+    
+    background-color: white;
+
+    box-shadow: 0px 15px 30px rgba(0, 81, 171, 0.148847);
+    border-radius: 5px;
+
+    @media screen and (min-width: 768px) {
+        max-inline-size: 63.5rem;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: "community community" "subscription why-us";
+    }
+}

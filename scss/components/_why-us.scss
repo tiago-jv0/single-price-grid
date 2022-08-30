@@ -1,0 +1,45 @@
+.why-us {
+    grid-area: why-us;
+
+    padding-inline: 2.4rem 4.9rem;
+    padding-block: 2.4rem;
+
+    background-color: #2AB3B1;
+
+    mix-blend-mode: normal;    
+
+    @media screen and (min-width: 768px) {
+        padding: 4rem;
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 1.8rem;
+        line-height: 2.1rem;
+
+        letter-spacing: -0.225px;
+
+        color: white;
+
+        
+    }
+
+    &__reasons {
+        margin-block-start: 1.8rem;
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__reason {
+        font-size: 1.4rem;
+        line-height: 2rem;
+
+        letter-spacing: -0.175px;
+
+        color: white;
+
+        mix-blend-mode: normal;
+        opacity: 0.75;
+    }
+}

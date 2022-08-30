@@ -1,0 +1,83 @@
+.subscription {
+    grid-area: subscription;
+
+    padding: 2.4rem;
+    
+    background-color: #2AB3B1;
+
+    @media screen and (min-width: 768px) {
+        padding: 4rem;   
+    }
+
+
+    &__title {
+        font-weight: 700;
+        font-size: 1.8rem;
+        line-height: 2.1rem;
+
+        letter-spacing: -0.225px;
+
+        color: white;
+    }
+
+    &__price {
+        margin-block-start: 1.8rem;
+        display: flex;
+        align-items: center;
+        gap: 1.1rem;
+
+        strong {
+            font-weight: 700;
+            font-size: 3.2rem;
+            line-height: 3.7rem;
+            letter-spacing: -0.4px;
+            color: white;
+        }
+
+        sup {
+            font-size: 1.6rem;
+            line-height: 2.6rem;
+
+            letter-spacing: -0.2px;
+
+            color: white;
+
+            mix-blend-mode: normal;
+            opacity: 0.5;
+        }
+    }
+
+    &__description {
+        margin-block-start: 4px;
+
+        font-size: 1.6rem;
+        line-height: 2.6rem;
+
+        letter-spacing: -0.2px;
+        color: white;
+    }
+
+    &__button {
+        margin-block-start: 2.6rem;
+
+        block-size: 4.8rem;
+        inline-size: 100%;
+
+        background: var(--bright-yellow);
+        box-shadow: 0px 1rem 1rem rgba(0, 0, 0, 0.0973011);
+        border-radius: 5px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        border: none;
+
+        font-weight: 700;
+        font-size: 1.6rem;
+        line-height: 1.9rem;
+        letter-spacing: -0.2px;
+
+        color: white;
+    }
+}
